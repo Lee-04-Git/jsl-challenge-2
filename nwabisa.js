@@ -1,4 +1,3 @@
-
 // nwabisa.js
 
 export const nwabisa = {
@@ -7,6 +6,6 @@ export const nwabisa = {
     role: "CEO"
 };
 
- display= nwabisa.firstname + " " + nwabisa.surname + " (" + nwabisa.role + ")"
+ const display= nwabisa.firstname + " " + nwabisa.surname + " (" + nwabisa.role + ")"
  document.querySelector('#nwabisa').innerText = display
 
