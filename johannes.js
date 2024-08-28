@@ -5,4 +5,4 @@ export const johannes = {
     role: "Intern"
 };
  const display= johannes.firstname + " " + johannes.surname + " (" + johannes.role + ")"
-document.querySelector('#johannes').innerText = display
+ document.querySelector('#johannes').innerText = display
