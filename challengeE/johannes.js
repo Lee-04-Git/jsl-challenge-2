@@ -1,4 +1,5 @@
 // johannes.js
+
 export const johannes = {
     firstname: "Johannes",
     surname: "Potgieter",
