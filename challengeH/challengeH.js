@@ -6,9 +6,9 @@ const secondaryPhone = '0219131568';
 function checkForValidPhoneNumber(phone) {
 
     /*
-     loop continues as long as i is the length
+     Loop continues as long as i is the length
      of the phone string.
-     after each iteration, increase by 1
+     After each iteration, increase by 1.
     */
     for (let i = 0; i < phone.length; i++) {
         // Check if the character is not a digit (0-9)
