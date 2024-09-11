@@ -5,11 +5,6 @@ const secondaryPhone = '0219131568';
 
 function checkForValidPhoneNumber(phone) {
 
-    // checks if phone is not a string
-    if (typeof phone !== 'string') {
-        return false;
-    }
-
     /*
      loop continues as long as i is the length
      of the phone string.
