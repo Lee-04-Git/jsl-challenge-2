@@ -3,7 +3,6 @@ let date = 2050;
 let userStatus = "student"; // changed variable name from "status" to "userStatus"
 let count = 0;
 
-// added strict equal operator
 // removed "let" declarations
 if (date = 2050) {
 	console.log("January", 'New Year’s Day');
@@ -13,8 +12,10 @@ if (date = 2050) {
 	console.log(date, 'Freedom Day');
 	 count += 4
 
+	// Assign "student" to userStatus and check if it matches
 	if (userStatus = "student") {
 	  console.log('June', 'Youth Day')
+	  // Increment/add the count variable by 1
 		 count += 1
   }
 
@@ -22,14 +23,18 @@ if (date = 2050) {
 	console.log('September', 'Heritage Day')
 	date = 'December'
 	console.log(date, 'Day of Reconciliation')
+	// Increment/add the count variable by 3
 	 count += 3
 
+	// Assign "parent" to userStatus and check if it matches
 	if (userStatus = "parent") {
 	  console.log(date, 'Christmas Day')
+	  // Increment/add the count variable by 1
 		 count += 1
   }
 
 	console.log(date, 'Day of Goodwill')
+	// Increment/add the count variable by 1
 	 count = count + 1
 }
 
