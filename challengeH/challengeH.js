@@ -11,7 +11,9 @@ function checkForValidPhoneNumber(phone) {
      after each iteration, increase by 1
     */
     for (let i = 0; i < phone.length; i++) {
+        // Check if the character is not a digit (0-9)
         if (phone[i] < '0' || phone[i] > '9') {
+            // Return false if a non-numeric character is found
             return false;
          }
     }
