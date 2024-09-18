@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive; /* Retro font */
+}
+
+body {
+    background: url('img/galaxy.gif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Retro shadow */
+    text-align: center;
+    width: 300px;
+    border: 3px solid #d53f8c; /* Contrasting pink border */
+    backdrop-filter: blur(10px); /* Blur effect for a soft look */
+    margin: 20px; /* Ensure card has margin around it */
+}
+
+h1 {
+    font-size: 1.5rem; /* Slightly smaller font size */
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff007f, #ff77b5); /* Pink gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px #000; /* Retro text shadow */
+}
+
+p {
+    margin: 8px 0; /* Reduced margin for smaller font */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    font-weight: bold;
+    background: linear-gradient(135deg, #ffb3e6, #c2a4c2); /* Light pink and lavender gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px #000; /* Retro text shadow */
+}
+
+button {
+    background: linear-gradient(135deg, #d53f8c, #ff9a9e); /* Pink to light pink gradient */
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #d53f8c; /* Contrasting pink border */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    text-shadow: 1px 1px #000; /* Retro text shadow */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #d53f8c, #ff007f); /* Darker pink gradient on hover */
+    border-color: #ff007f; /* Bold border on hover */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1rem; /* Slightly smaller font size */
+    font-weight: bold;
+    color: #ffffff; /* White text for good contrast */
+}
