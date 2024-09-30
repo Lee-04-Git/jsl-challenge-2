@@ -9,10 +9,10 @@ const minuteOfDay = 0;
 // Only change below this line
 
 	document.getElementById('calculateBtn').addEventListener('click', function () {
-	if (hourOfDay === 0 && minuteOfDay === 0) {
-	const taxAsDecimal = parseFloat(tax.replace('%', '')) / 100;
-	const startingAfterTax = salary * (1 - taxAsDecimal);
-	const balance = startingAfterTax - transport - food - rent;
-	document.getElementById('balance').innerText = '$' + balance.toFixed(2);
+		if (hourOfDay === 0 && minuteOfDay === 0) {
+		const taxAsDecimal = parseFloat(tax.replace('%', '')) / 100;
+		const startingAfterTax = salary * (1 - taxAsDecimal);
+		const balance = startingAfterTax - transport - food - rent;
+		document.getElementById('balance').innerText = '$' + balance.toFixed(2);
 	}
 });	
