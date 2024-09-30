@@ -9,11 +9,17 @@ const sarahBalance = '-4582.2'
 const divider = '----------------------------------'
 
 // Only change below this line
+const leoBalancePositive = leoBalance.replace('-', '');
+const sarahBalancePositive = sarahBalance.replace('-', '');
 
-const owed = parseInt('R' + leoBalance + sarahBalance)
-const leo = "{leoName} + {leoSurname} + \"Owed\" + \"R\" + {sarahBalance}"
-const sarah = "{leoName} + {surname} + \"Owed\" + \"R\" + {sarahBalance}"
-const total = "Total amount owed: "
-const result = leo + sarah + divider + divider + total + owed + divider
+const leoBalanceNum = parseFloat(leoBalancePositive); // Convert to number
+const sarahBalanceNum = parseFloat(sarahBalancePositive); // Convert to number
 
-console.log(result)
+
+const owed = Math.round(leoBalanceNum + sarahBalanceNum); // remove decimal
+const leo = `${leoName} ${leoSurname.trim()} Owed: R${leoBalanceNum}`;
+const sarah = `${sarahName.trim()} ${sarahSurname} Owed: R${sarahBalanceNum}`;
+const total = `Total amount owed: ${owed}`;
+const result = `${leo}\n${sarah}\n${divider}\n${total}\n${divider}`;
+
+console.log(result);

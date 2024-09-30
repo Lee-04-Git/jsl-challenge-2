@@ -12,4 +12,4 @@ Furthermore, please ass a state that when neither a firstname nor nickname is pr
 const nickname= "Timmy";
 const firstname = "Timothy";
 
-console.log(`Good Morning, ${nickname} || ${firstname}!`);
+console.log(`Good morning, ${nickname || firstname}!`);
